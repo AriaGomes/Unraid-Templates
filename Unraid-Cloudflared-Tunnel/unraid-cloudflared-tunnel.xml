@@ -28,9 +28,9 @@ Discord: Figro#4064</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1666063456</DateInstalled>
+  <DateInstalled>1666063715</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Cloudflared Tunnel Token" Target="token" Default="eyJaCpXW0EFVOtmRH50aWJjT0FlaNh3aUxEbadkWwATaZBTUU5EdVpXTshmaapXRU5kI6IyciwiI5ATO3EGMmRWO5UDMtQTMilTLkVjZ00yNxADZtQWZjljY1ETOiojI0JCLiMDNiVTM5ImZyMWM5E2YkNDZ1cjZzUDMxkTO3UGNwAjNiojIhyJ9" Mode="" Description="Found in cloudflare zero trust dashboard. Looks similar to default value" Type="Variable" Display="always" Required="true" Mask="false">eyJaCpXW0EFVOtmRH50aWJjT0FlaNh3aUxEbadkWwATaZBTUU5EdVpXTshmaapXRU5kI6IyciwiI5ATO3EGMmRWO5UDMtQTMilTLkVjZ00yNxADZtQWZjljY1ETOiojI0JCLiMDNiVTM5ImZyMWM5E2YkNDZ1cjZzUDMxkTO3UGNwAjNiojIhyJ9</Config>
+  <Config Name="Cloudflared Tunnel Token" Target="token" Default="" Mode="" Description="Found in cloudflare zero trust dashboard. Looks similar to default value" Type="Variable" Display="always" Required="true" Mask="false"/>
 </Container>
