@@ -24,11 +24,11 @@ Discord: Figro#4064</Overview>
   <Category>Cloud: Tools: Network:Proxy Status:Beta</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://icons-for-free.com/iconfiles/png/512/super+tiny+icons+cloudflare-1324450714381209833.png</Icon>
+  <Icon>https://raw.githubusercontent.com/AriaGomes/Unraid-Templates/fc45e49d77f4e8546b78b50a636f236cfa30b5b5/Images/unraid-cloudflared-tunnel.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1666063011</DateInstalled>
+  <DateInstalled>1666063456</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
