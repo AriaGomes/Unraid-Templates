@@ -34,5 +34,5 @@ Discord: Figro#4064</Overview>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Cloudflared Tunnel Token" Target="token" Default="" Mode="" Description="Found in cloudflare zero trust dashboard. Looks similar to default value" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Cloudflared Tunnel Token" Target="token" Default="" Mode="" Description="Found in cloudflare zero trust dashboard" Type="Variable" Display="always" Required="true" Mask="false"/>
 </Container>
