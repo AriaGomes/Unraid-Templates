@@ -23,16 +23,16 @@ Github: https://github.com/AriaGomes/Unraid-Cloudflared-Tunnel&#xD;
 DockerHub: https://hub.docker.com/r/figro/unraid-cloudflared-tunnel&#xD;
 &#xD;
 Discord: Figro#4064</Overview>
-  <Category>Cloud: Tools: Network:Proxy Status:Beta</Category>
+  <Category>Cloud: Tools: Network:Proxy Status:Stable</Category>
   <WebUI/>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/AriaGomes/Unraid-Templates/fc45e49d77f4e8546b78b50a636f236cfa30b5b5/Images/unraid-cloudflared-tunnel.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1666203324</DateInstalled>
+  <DateInstalled>1666470338</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Cloudflared Tunnel Token" Target="token" Default="" Mode="" Description="Found in cloudflare zero trust dashboard" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Cloudflared Tunnel Token" Target="token" Default="" Mode="" Description="Found in cloudflare zero trust dashboard. Looks similar to default value" Type="Variable" Display="always" Required="true" Mask="false"/>
 </Container>
