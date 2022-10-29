@@ -6,7 +6,7 @@
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
-  <Privileged>true</Privileged>
+  <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/129752-figros-docker-repo-support-thread/</Support>
   <Project>https://getleon.ai</Project>
   <Overview>Leon-AI personal assistent chat bot implementation for Unraid.&#xD;
@@ -22,10 +22,10 @@ Leon Docs: https://docs.getleon.ai</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1667019381</DateInstalled>
+  <DateInstalled>1667027050</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Web UI Port" Target="1337" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">1337</Config>
+  <Config Name="Web UI Port" Target="1337" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">2012</Config>
   <Config Name="Leon Data" Target="/home/docker/leon" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/leon</Config>
 </Container>
