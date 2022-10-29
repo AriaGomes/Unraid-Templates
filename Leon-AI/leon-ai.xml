@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/129752-figros-docker-repo-support-thread/</Support>
   <Project>https://getleon.ai</Project>
-  <Overview>Leon-AI personal assistent chat bot implementation for Unraid.&#xD;
+  <Overview>Leon-AI personal assistant chat bot implementation for Unraid.&#xD;
 Configure the data path for editing or developing on Leon-AI&#xD;
 You can configure Leon using the .env file in your data path using the Leon docs below&#xD;
 &#xD;
