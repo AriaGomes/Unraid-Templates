@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Leon-AI</Name>
+  <Repository>figro/leon-ai</Repository>
+  <Registry>https://hub.docker.com/r/figro/leon-ai</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://forums.unraid.net/topic/129752-figros-docker-repo-support-thread/</Support>
+  <Project>https://getleon.ai</Project>
+  <Overview>Leon-AI personal assistent chat bot implementation for Unraid.&#xD;
+Configure the data path for editing or developing on Leon-AI&#xD;
+You can configure Leon using the .env file in your data path using the Leon docs below&#xD;
+&#xD;
+Github Project: https://github.com/AriaGomes/leon-docker&#xD;
+Leon Docs: https://docs.getleon.ai</Overview>
+  <Category>Other: Network:Messenger Status:Beta</Category>
+  <WebUI>http://[IP]:[PORT:1337]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/AriaGomes/Unraid-Templates/master/Images/leon-ai.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1667019381</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Web UI Port" Target="1337" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">1337</Config>
+  <Config Name="Leon Data" Target="/home/docker/leon" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/leon</Config>
+</Container>
