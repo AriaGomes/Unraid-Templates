@@ -18,8 +18,8 @@
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1674534979</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>Buy me a coffee :)</DonateText>
+  <DonateLink>https://www.buymeacoffee.com/ariagomes</DonateLink>
   <Requires/>
   <Config Name="HTTP port" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="appdata" Target="/home/flood" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/flood-ui</Config>

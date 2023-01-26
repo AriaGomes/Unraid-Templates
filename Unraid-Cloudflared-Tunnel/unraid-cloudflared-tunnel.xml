@@ -31,8 +31,8 @@ Discord: Figro#4064</Overview>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1666470338</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>Buy me a coffee :)</DonateText>
+  <DonateLink>https://www.buymeacoffee.com/ariagomes</DonateLink>
   <Requires/>
   <Config Name="Cloudflared Tunnel Token" Target="token" Default="" Mode="" Description="Found in cloudflare zero trust dashboard. Looks similar to default value" Type="Variable" Display="always" Required="true" Mask="false"/>
 </Container>

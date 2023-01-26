@@ -23,8 +23,8 @@ Leon Docs: https://docs.getleon.ai</Overview>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1667027050</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>Buy me a coffee :)</DonateText>
+  <DonateLink>https://www.buymeacoffee.com/ariagomes</DonateLink>
   <Requires/>
   <Config Name="Web UI Port" Target="1337" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">2012</Config>
   <Config Name="Leon Data" Target="/home/docker/leon" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/leon</Config>
