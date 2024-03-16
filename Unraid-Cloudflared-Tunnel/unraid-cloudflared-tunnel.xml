@@ -11,6 +11,8 @@
   <Project>https://github.com/AriaGomes/Unraid-Cloudflared-Tunnel</Project>
   <Overview>Simple cloudflared docker container for Unraid. Simply add your token from cloudflare dashboard as a variable and your done.&#xD;
 &#xD;
+There are advanced environement variables that can be set. The default values in these fields are what cloudflared will use by default if they are not set. There is more environement variables that can be added but will need a value entered or other configuration to use so I have removed them from the template. They can be seen on the github readme or the cloudflared docs.&#xD;
+&#xD;
 Cloudflared Docs: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/&#xD;
 &#xD;
 https://hub.docker.com/r/cloudflare/cloudflared&#xD;
@@ -23,16 +25,26 @@ Github: https://github.com/AriaGomes/Unraid-Cloudflared-Tunnel&#xD;
 DockerHub: https://hub.docker.com/r/figro/unraid-cloudflared-tunnel&#xD;
 &#xD;
 Discord: Figro#4064</Overview>
-  <Category>Cloud: Tools: Network:Proxy Status:Stable</Category>
+  <Category>Cloud: Tools:Utilities Network:Proxy spotlight:</Category>
   <WebUI/>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/AriaGomes/Unraid-Templates/master/Unraid-Cloudflared-Tunnel/unraid-cloudflared-tunnel.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/AriaGomes/Unraid-Templates/fc45e49d77f4e8546b78b50a636f236cfa30b5b5/Images/unraid-cloudflared-tunnel.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1666470338</DateInstalled>
+  <DateInstalled>1710631647</DateInstalled>
   <DonateText>Buy me a coffee :)</DonateText>
   <DonateLink>https://www.buymeacoffee.com/ariagomes</DonateLink>
   <Requires/>
-  <Config Name="Cloudflared Tunnel Token" Target="token" Default="" Mode="" Description="Found in cloudflare zero trust dashboard. Looks similar to default value" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="TUNNEL_TOKEN" Target="token" Default="" Mode="" Description="Associates the cloudflared instance with a specific tunnel. The tunnel&#x2019;s token is shown in the dashboard when you first create the tunnel. You can also retrieve the token using the API." Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="NO_AUTOUPDATE" Target="NO_AUTOUPDATE" Default="" Mode="" Description="Disables automatic cloudflared updates. Set to false or delete to autoupdate. Autoupdating can cause tunnel to go down.&#13;&#10;&#13;&#10;" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="TUNNEL_RETRIES" Target="TUNNEL_RETRIES" Default="5" Mode="" Description="Specifies the maximum number of retries for connection/protocol errors. Retries use exponential backoff (retrying at 1, 2, 4, 8, 16 seconds by default), so it is not recommended that you increase this value significantly." Type="Variable" Display="advanced" Required="false" Mask="false">5</Config>
+  <Config Name="TUNNEL_REGION" Target="TUNNEL_REGION" Default="" Mode="" Description="Allows you to choose the regions to which connections are established. Currently the only available value is us, which routes all connections through data centers in the United States. Omit or leave empty to connect to the global region." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="TUNNEL_TRANSPORT_PROTOCOL" Target="TUNNEL_TRANSPORT_PROTOCOL" Default="" Mode="" Description="Specifies the protocol used to establish a connection between cloudflared and the Cloudflare global network. Available values are auto, http2, and quic." Type="Variable" Display="advanced" Required="false" Mask="false">auto</Config>
+  <Config Name="TUNNEL_EDGE_BIND_ADDRESS" Target="TUNNEL_EDGE_BIND_ADDRESS" Default="" Mode="" Description="Specifies the outgoing IP address used to establish a connection between cloudflared and the Cloudflare global network." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="TUNNEL_EDGE_IP_VERSION" Target="TUNNEL_EDGE_IP_VERSION" Default="" Mode="" Description="Specifies the IP address version (IPv4 or IPv6) used to establish a connection between cloudflared and the Cloudflare global network. Available values are auto, 4, and 6." Type="Variable" Display="advanced" Required="false" Mask="false">auto</Config>
+  <Config Name="TUNNEL_GRACE_PERIOD" Target="TUNNEL_GRACE_PERIOD" Default="" Mode="" Description="When cloudflared receives SIGINT/SIGTERM it will stop accepting new requests, wait for in-progress requests to terminate, then shut down. Waiting for in-progress requests will timeout after this grace period, or when a second SIGTERM/SIGINT is received." Type="Variable" Display="advanced" Required="false" Mask="false">30s</Config>
+  <Config Name="TUNNEL_ORIGIN_CERT" Target="TUNNEL_ORIGIN_CERT" Default="" Mode="" Description="Specifies the account certificate for one of your zones, authorizing the client to serve as an origin for that zone. You can obtain a certificate by using the cloudflared tunnel login command or by visiting https://dash.cloudflare.com/argotunnel." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="TUNNEL_METRICS" Target="TUNNEL_METRICS" Default="" Mode="" Description="Exposes a Prometheus endpoint on the specified IP address/port, which you can then query for usage metrics. (You will need to add a port to the unraid template)" Type="Variable" Display="advanced" Required="false" Mask="false">localhost:</Config>
+  <Config Name="TUNNEL_LOGLEVEL" Target="TUNNEL_LOGLEVEL" Default="" Mode="" Description="Specifies the verbosity of logging. The default info level does not produce much output, but you may wish to use the warn level in production. Available values are: debug, info, warn, error, fatal." Type="Variable" Display="advanced" Required="false" Mask="false">info</Config>
 </Container>
