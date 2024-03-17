@@ -32,11 +32,11 @@ Discord: Figro#4064</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1710631647</DateInstalled>
+  <DateInstalled>1710653650</DateInstalled>
   <DonateText>Buy me a coffee :)</DonateText>
   <DonateLink>https://www.buymeacoffee.com/ariagomes</DonateLink>
   <Requires/>
-  <Config Name="TUNNEL_TOKEN" Target="token" Default="" Mode="" Description="Associates the cloudflared instance with a specific tunnel. The tunnel&#x2019;s token is shown in the dashboard when you first create the tunnel. You can also retrieve the token using the API." Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="TUNNEL_TOKEN" Target="TUNNEL_TOKEN" Default="" Mode="" Description="Associates the cloudflared instance with a specific tunnel. The tunnel&#x2019;s token is shown in the dashboard when you first create the tunnel. You can also retrieve the token using the API." Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="NO_AUTOUPDATE" Target="NO_AUTOUPDATE" Default="" Mode="" Description="Disables automatic cloudflared updates. Set to false or delete to autoupdate. Autoupdating can cause tunnel to go down.&#13;&#10;&#13;&#10;" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="TUNNEL_RETRIES" Target="TUNNEL_RETRIES" Default="5" Mode="" Description="Specifies the maximum number of retries for connection/protocol errors. Retries use exponential backoff (retrying at 1, 2, 4, 8, 16 seconds by default), so it is not recommended that you increase this value significantly." Type="Variable" Display="advanced" Required="false" Mask="false">5</Config>
   <Config Name="TUNNEL_REGION" Target="TUNNEL_REGION" Default="" Mode="" Description="Allows you to choose the regions to which connections are established. Currently the only available value is us, which routes all connections through data centers in the United States. Omit or leave empty to connect to the global region." Type="Variable" Display="advanced" Required="false" Mask="false"/>
