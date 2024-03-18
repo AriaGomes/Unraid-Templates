@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/129752-figros-docker-repo-support-thread</Support>
   <Project>https://flood.js.org</Project>
-  <Overview>Standalone UI. Requires an existing instance of rTorroent, qBittorrent, Deluge, Transmission. On first run it will take a while to spin up, be patient and check your logs!</Overview>
+  <Overview>Standalone UI. Requires an existing instance of rTorroent, qBittorrent, Deluge, Transmission.</Overview>
   <Category>Downloaders: Other: Network:Web Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
   <TemplateURL/>
@@ -17,10 +17,9 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1674534979</DateInstalled>
-  <DonateText>Buy me a coffee :)</DonateText>
-  <DonateLink>https://www.buymeacoffee.com/ariagomes</DonateLink>
+  <DateInstalled>1710724597</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
   <Requires/>
   <Config Name="HTTP port" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
-  <Config Name="appdata" Target="/home/flood" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/flood-ui</Config>
 </Container>
