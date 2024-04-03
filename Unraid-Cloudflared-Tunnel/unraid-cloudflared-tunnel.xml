@@ -32,7 +32,7 @@ Discord: Figro#4064</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1710653650</DateInstalled>
+  <DateInstalled>1712182102</DateInstalled>
   <DonateText>Buy me a coffee :)</DonateText>
   <DonateLink>https://www.buymeacoffee.com/ariagomes</DonateLink>
   <Requires/>
@@ -45,6 +45,7 @@ Discord: Figro#4064</Overview>
   <Config Name="TUNNEL_EDGE_IP_VERSION" Target="TUNNEL_EDGE_IP_VERSION" Default="" Mode="" Description="Specifies the IP address version (IPv4 or IPv6) used to establish a connection between cloudflared and the Cloudflare global network. Available values are auto, 4, and 6." Type="Variable" Display="advanced" Required="false" Mask="false">auto</Config>
   <Config Name="TUNNEL_GRACE_PERIOD" Target="TUNNEL_GRACE_PERIOD" Default="" Mode="" Description="When cloudflared receives SIGINT/SIGTERM it will stop accepting new requests, wait for in-progress requests to terminate, then shut down. Waiting for in-progress requests will timeout after this grace period, or when a second SIGTERM/SIGINT is received." Type="Variable" Display="advanced" Required="false" Mask="false">30s</Config>
   <Config Name="TUNNEL_ORIGIN_CERT" Target="TUNNEL_ORIGIN_CERT" Default="" Mode="" Description="Specifies the account certificate for one of your zones, authorizing the client to serve as an origin for that zone. You can obtain a certificate by using the cloudflared tunnel login command or by visiting https://dash.cloudflare.com/argotunnel." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="TUNNEL_METRICS" Target="TUNNEL_METRICS" Default="" Mode="" Description="Exposes a Prometheus endpoint on the specified IP address/port, which you can then query for usage metrics. (You will need to add a port to the unraid template)" Type="Variable" Display="advanced" Required="false" Mask="false">localhost:</Config>
+  <Config Name="TUNNEL_METRICS" Target="TUNNEL_METRICS" Default="" Mode="" Description="Exposes a Prometheus endpoint on the specified IP address/port, which you can then query for usage metrics. (You will need to add a port to the unraid template)" Type="Variable" Display="advanced" Required="false" Mask="false">0.0.0.0:46495</Config>
   <Config Name="TUNNEL_LOGLEVEL" Target="TUNNEL_LOGLEVEL" Default="" Mode="" Description="Specifies the verbosity of logging. The default info level does not produce much output, but you may wish to use the warn level in production. Available values are: debug, info, warn, error, fatal." Type="Variable" Display="advanced" Required="false" Mask="false">info</Config>
+  <Config Name="Metrics Port" Target="46495" Default="46495" Mode="tcp" Description="Exposes prometheus metrics server (Can be removed if you don't care about metrics)" Type="Port" Display="advanced" Required="false" Mask="false">46495</Config>
 </Container>
