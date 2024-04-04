@@ -25,7 +25,7 @@ Github: https://github.com/AriaGomes/Unraid-Cloudflared-Tunnel&#xD;
 DockerHub: https://hub.docker.com/r/figro/unraid-cloudflared-tunnel&#xD;
 &#xD;
 Discord: Figro#4064</Overview>
-  <Category>Cloud: Tools:Utilities Network:Proxy spotlight:</Category>
+  <Category>Cloud: Tools:Utilities Network:Proxy</Category>
   <WebUI>http://[IP]:[PORT:46495]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/AriaGomes/Unraid-Templates/master/Unraid-Cloudflared-Tunnel/unraid-cloudflared-tunnel.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/AriaGomes/Unraid-Templates/fc45e49d77f4e8546b78b50a636f236cfa30b5b5/Images/unraid-cloudflared-tunnel.png</Icon>
