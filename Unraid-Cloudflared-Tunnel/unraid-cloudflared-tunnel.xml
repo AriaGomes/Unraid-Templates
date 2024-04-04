@@ -32,7 +32,7 @@ Discord: Figro#4064</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1712182102</DateInstalled>
+  <DateInstalled>1712260782</DateInstalled>
   <DonateText>Buy me a coffee :)</DonateText>
   <DonateLink>https://www.buymeacoffee.com/ariagomes</DonateLink>
   <Requires/>
@@ -48,4 +48,5 @@ Discord: Figro#4064</Overview>
   <Config Name="TUNNEL_METRICS" Target="TUNNEL_METRICS" Default="" Mode="" Description="Exposes a Prometheus endpoint on the specified IP address/port, which you can then query for usage metrics. (You will need to add a port to the unraid template)" Type="Variable" Display="advanced" Required="false" Mask="false">0.0.0.0:46495</Config>
   <Config Name="TUNNEL_LOGLEVEL" Target="TUNNEL_LOGLEVEL" Default="" Mode="" Description="Specifies the verbosity of logging. The default info level does not produce much output, but you may wish to use the warn level in production. Available values are: debug, info, warn, error, fatal." Type="Variable" Display="advanced" Required="false" Mask="false">info</Config>
   <Config Name="Metrics Port" Target="46495" Default="46495" Mode="tcp" Description="Exposes prometheus metrics server (Can be removed if you don't care about metrics)" Type="Port" Display="advanced" Required="false" Mask="false">46495</Config>
+  <Config Name="Appdata" Target="/appdata" Default="/mnt/user/appdata/cloudflared" Mode="rw" Description="Used in conjuction with log, pid, and cert env variables to get more info or use your own cert. If you don't need this you can delete or ignore this." Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/cloudflared</Config>
 </Container>
