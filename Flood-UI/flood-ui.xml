@@ -17,9 +17,11 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1710724597</DateInstalled>
+  <DateInstalled>1737474860</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="HTTP port" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="appdata" Target="/.local/share/flood" Default="" Mode="rw" Description="Appdata path for persistence &#13;&#10;Permissions must be sufficent before starting the containe. Check logs for more info (Optional but recommended)&#13;&#10;&#13;&#10;" Type="Path" Display="always" Required="false" Mask="false"/>
+  <TailscaleStateDir/>
 </Container>
